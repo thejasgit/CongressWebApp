@@ -1,0 +1,306 @@
+body {
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+
+.fav-star{
+     -webkit-text-stroke: 1px black;
+    color:yellow;
+}
+#wrapper {
+    
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+        min-height: 100%;
+    height: 100%;
+    width: 100%;    
+    left: 0;
+    display: inline-block;
+}
+
+.navbar-brand {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.navbar-brand img {
+    display: inline;
+    height:20px;
+}
+
+.navbar-brand span{
+    
+   font-size: small;
+    color: black;
+    font-weight: bold;
+}
+
+#wrapper.toggled {
+    padding-left: 0px;
+}
+
+#sidebar {
+     padding: 50px 0 0px 0;
+    position: fixed;
+    left: 0px;
+    width: 150px;
+    height: 100%;
+    overflow: hidden;
+    background: #504d4d;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#wrapper.toggled #sidebar {
+    left: -150px;
+}
+
+.divider {
+   
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+#page-content {
+     height: 100%;
+    background-color: #ece8e8;
+    overflow-y: auto;
+   padding-bottom: 3%;
+   position: absolute;
+    left: 150px;
+    right: 0px;
+     -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#wrapper.toggled #page-content {
+  
+ left:0px;
+    
+}
+
+.divider{
+    
+}
+
+#nav-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    margin: 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+#nav-btn span{
+    height: 3px;
+    background: #111;
+    margin-bottom: 3px;
+    display: block;
+    border-radius: 5px;
+}
+
+
+.content-view{
+    
+    margin: 2%;
+    
+}
+
+
+
+/*side bar style*/
+
+.sidebar-nav {
+    
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    list-style: none;
+     border-bottom: 0;
+}
+
+
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+        margin-bottom: 0;
+    float: none;
+}
+
+.sidebar-nav li a, .sidebar-nav li.active a {
+    display: block;
+    text-decoration: none;
+    
+    cursor: pointer;
+    border:0;
+    padding: 0px;
+    line-height: 40px;
+    margin-right: 0px;
+    background-color: #504d4d;
+    color: #fff;
+    
+}
+
+.sidebar-nav.nav-tabs li>a,.sidebar-nav.nav-tabs li.active>a{
+    border:0;
+    border-radius: 0;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover , .sidebar-nav li.active a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+     border:0px !important;
+    border-radius: 0;
+    padding: 0px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,.sidebar-nav li.active a:active, .sidebar-nav li.active a:focus {
+    text-decoration: none;
+     border:0;
+    padding: 0px;
+   line-height: 40px;
+      background-color: #504d4d;
+    color: #fff;
+}
+
+
+i.fa{
+    
+    display: inline;
+    
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.content-info{
+    
+    background-color: white;
+    box-shadow: 1px 1px 10px #959095;
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+.nav-tabs > li {
+    
+        margin-bottom: 0px;
+}
+.nav-tabs > li.active > a {
+    
+    color:black;
+}
+
+.nav-tabs > li:not(.active) > a{
+    
+    color:gainsboro;
+}
+.panel{
+    
+    margin:2%;
+}
+.panel-heading{
+    padding-bottom: 20px;
+}
+.panel-title{
+    
+    display: inline;
+    
+}
+
+select.form-control, input.form-control{
+    
+    width:30%;
+    display: inline;
+    float: right;
+    
+}
+
+.content-view.ng-hide-add, .content-view.ng-hide-remove{
+    -webkit-transition: 0s linear all;
+    transition: 0s linear all;
+}
+
+.loading-div{
+    
+        margin: 10% auto;
+    text-align: center;
+    width: 30%;
+}
+
+.details-header{
+    
+    margin: 10px;
+    
+}
+.dp{
+    display: block;
+    margin: auto;
+    
+}
+.details-header > button.fav-btn{
+    float: right;
+}
+
+.details-header > h4{
+    
+        display: inline;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+    
+    #sidebar{
+        width: 50px;
+    }
+    
+    #sidebar ul li span:nth-child(2){
+        display: none;
+    }
+    
+    #page-content{
+        left: 50px;
+    }
+    
+    select.form-control, input.form-control{
+    
+    width:120px;
+       
+}
+    
+    .mobile-hide{
+        display: none !important;
+    }
+    
+    object{
+        
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    
+    .navbar-brand {
+        width:60%;
+    }
+}
+
+
